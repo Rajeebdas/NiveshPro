@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --background: 40 33% 98%; /* Warm, calming off-white/sand */
+  --foreground: 160 30% 12%; /* Very dark pine green */
+
+  --card: 0 0% 100%;
+  --card-foreground: 160 30% 12%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 160 30% 12%;
+
+  --primary: 164 45% 22%; /* Deep, rich forest green */
+  --primary-foreground: 40 33% 98%;
+
+  --secondary: 40 20% 93%;
+  --secondary-foreground: 164 45% 22%;
+
+  --muted: 40 20% 93%;
+  --muted-foreground: 160 15% 45%;
+
+  --accent: 30 70% 60%; /* Terracotta/Bronze accent */
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 40 33% 98%;
+
+  --border: 40 15% 88%;
+  --input: 40 15% 88%;
+  --ring: 164 45% 22%;
+
+  --radius: 1rem;
+
+  --chart-1: 164 45% 22%; /* Forest Green */
+  --chart-2: 30 70% 60%; /* Bronze */
+  --chart-3: 160 20% 50%; /* Muted Green */
+  --chart-4: 200 30% 60%; /* Soft Blue */
+  --chart-5: 40 80% 65%; /* Gold */
+
+  --font-sans: 'Outfit', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+.dark {
+  --background: 160 30% 8%;
+  --foreground: 40 33% 98%;
+
+  --card: 160 30% 11%;
+  --card-foreground: 40 33% 98%;
+
+  --popover: 160 30% 11%;
+  --popover-foreground: 40 33% 98%;
+
+  --primary: 164 45% 35%;
+  --primary-foreground: 40 33% 98%;
+
+  --secondary: 160 20% 18%;
+  --secondary-foreground: 40 33% 98%;
+
+  --muted: 160 20% 18%;
+  --muted-foreground: 160 15% 70%;
+
+  --accent: 30 70% 60%;
+  --accent-foreground: 0 0% 100%;
+
+  --border: 160 20% 18%;
+  --input: 160 20% 18%;
+  --ring: 164 45% 35%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}

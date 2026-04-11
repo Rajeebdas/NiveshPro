@@ -4,6 +4,11 @@
 
 pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
 
+## Current Design Work
+
+- NiveshPro finance dashboard mockup lives in `artifacts/mockup-sandbox/src/components/mockups/niveshpro-dashboard/`.
+- The mockup is a standalone canvas prototype for expense, investment, portfolio, cashflow, goals, and insights dashboard UI.
+
 ## Stack
 
 - **Monorepo tool**: pnpm workspaces
