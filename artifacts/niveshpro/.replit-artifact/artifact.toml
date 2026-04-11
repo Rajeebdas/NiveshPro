@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "NiveshPro"
+version = "1.0.0"
+id = "artifacts/niveshpro"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24495
+
+[services.development]
+run = "pnpm --filter @workspace/niveshpro run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/niveshpro", "run", "build" ]
+publicDir = "artifacts/niveshpro/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24495"
+BASE_PATH = "/"

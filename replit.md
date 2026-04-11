@@ -8,6 +8,8 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 
 - NiveshPro finance dashboard mockup lives in `artifacts/mockup-sandbox/src/components/mockups/niveshpro-dashboard/`.
 - The mockup is a standalone canvas prototype for expense, investment, portfolio, cashflow, goals, and insights dashboard UI.
+- NiveshPro functional web app lives in `artifacts/niveshpro/` and is served at `/`.
+- The web app is frontend-only for the first functional version, using browser localStorage for transactions, investments, goals, bills, and budgets.
 
 ## Stack
 
